@@ -52,6 +52,7 @@ public class RpcConsumerImpl extends RpcConsumer implements InvocationHandler {
 	RpcConnection select()
 	{
 		//Random rd=new Random(System.currentTimeMillis());
+		// 时间片轮转
 		int d=(int) (callTimes.getAndIncrement()%(connection_list.size()+1));
 		if(d==0)
 			return connection;
