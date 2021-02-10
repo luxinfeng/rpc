@@ -60,7 +60,7 @@ public class RpcConsumer implements InvocationHandler {
     }
 
     /**
-     * register a consumer hook to this service
+     * register a consumer hook to this serviceC
      * @param hook
      * @return
      */
@@ -69,7 +69,7 @@ public class RpcConsumer implements InvocationHandler {
     }
 
     /**
-     * return an Object which can cast to the interface class
+     * return an Object which can iracast to the interface class
      *
      * @return
      */

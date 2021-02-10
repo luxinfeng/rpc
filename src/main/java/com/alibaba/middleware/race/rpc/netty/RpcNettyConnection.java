@@ -34,7 +34,7 @@ import com.alibaba.middleware.race.rpc.serializer.RpcEncoder;
  * @author sei.zz
  *
  */
-public class RpcNettyConnection implements RpcConnection {
+public class  RpcNettyConnection implements RpcConnection {
 
 	private InetSocketAddress inetAddr;
 	
