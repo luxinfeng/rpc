@@ -45,12 +45,11 @@ public class RpcRequestHandler extends ChannelInboundHandlerAdapter {
 	//更新RpcContext的类容
 	private void UpdateRpcContext(String host,Map<String,Object> map)
 	{
-		if(ThreadLocalMap.containsKey(host))
-		{
-			Map<String,Object> local=ThreadLocalMap.get(host);
+		if(ThreadLocalMap.containsKey(host)) {
+			Map<String, Object> local = ThreadLocalMap.get(host);
 			local.putAll(map);//把客户端的加进来
 			ThreadLocalMap.put(host, local);//放回去
-			for(Map.Entry<String, Object> entry:map.entrySet()){ //更新变量
+			for (Map.Entry<String, Object> entry : map.entrySet()) { //更新变量
 				RpcContext.addProp(entry.getKey(), entry.getValue());
 			}
 		}

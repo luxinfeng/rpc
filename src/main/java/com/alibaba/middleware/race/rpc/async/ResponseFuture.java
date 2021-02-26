@@ -10,7 +10,7 @@ import java.util.concurrent.TimeoutException;
 /**
  * Created by huangsheng.hs on 2015/3/27.
  */
-public class ResponseFuture {
+public class  ResponseFuture {
     public static ThreadLocal<Future<Object>> futureThreadLocal = new ThreadLocal<Future<Object>>();
 
     public static Object getResponse(long timeout) throws InterruptedException {

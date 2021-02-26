@@ -31,7 +31,6 @@ public class InvokeFuture<T> {
  
 	public void setResult(T result) {
 		this.result=result;
-		notifyListeners();
 		synchronized (semaphore) {
 			if(!isRelase)
 			{

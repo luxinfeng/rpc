@@ -42,7 +42,8 @@ public class RpcDecoder extends ByteToMessageDecoder{
  				
         if(genericClass.equals(RpcResponse.class))
         {
-        	int requestIdLength=in.readInt();//获取到requestId的长度
+        	int requestIdLength=in.readInt();//获取到
+			// requestId的长度
         	
         	byte[] requestIdBytes=new byte[requestIdLength];
         	in.readBytes(requestIdBytes);

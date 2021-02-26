@@ -4,6 +4,7 @@ package com.alibaba.middleware.race.rpc.tool;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.dyuproject.protostuff.ProtostuffIOUtil;
 import org.objenesis.Objenesis;
 import org.objenesis.ObjenesisStd;
 

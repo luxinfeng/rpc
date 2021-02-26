@@ -134,7 +134,7 @@ public class  RpcNettyConnection implements RpcConnection {
 		if(channel==null)
 			channel=getChannel(inetAddr.toString());
 		if(channel!=null)
-		{	
+		{
 			final InvokeFuture<Object> future=new InvokeFuture<Object>();
 			futrues.put(request.getRequestId(), future);
 			future.setMethod(request.getMethodName());
@@ -241,7 +241,7 @@ public class  RpcNettyConnection implements RpcConnection {
 		Iterator<Map.Entry<String, InvokeFuture<Object>>> it = futrues.entrySet().iterator();
 		String methodName=null;
 		InvokeFuture<Object> temp=null;
-        while (it.hasNext()) 
+        while (it.hasNext())
         {
             Map.Entry<String, InvokeFuture<Object>> entry = it.next();
             

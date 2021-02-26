@@ -39,7 +39,7 @@
     </build>
     
     <dependencies>
-	    		<dependency>
+			<dependency>
 		    	<groupId>com.dyuproject.protostuff</groupId>
 				<artifactId>protostuff-core</artifactId>
 					<version>1.0.9</version>
